@@ -1,5 +1,5 @@
 """
-Apex Financial — Checking Account API
+GPS Financial — Checking Account API
 FastAPI backend for processing account creation requests.
 Includes AI agent chat endpoint powered by OpenAI GPT-4o.
 """
@@ -16,7 +16,7 @@ from pydantic import BaseModel, field_validator
 
 from agent import process_message
 
-app = FastAPI(title="Apex Financial API", version="2.0.0")
+app = FastAPI(title="GPS Financial API", version="2.0.0")
 
 # CORS — allow frontend dev server
 app.add_middleware(
@@ -190,7 +190,7 @@ class AccountResponse(BaseModel):
 
 @app.get("/api/health")
 async def health_check():
-    return {"status": "healthy", "service": "Apex Financial API", "version": "2.0.0"}
+    return {"status": "healthy", "service": "GPS Financial API", "version": "2.0.0"}
 
 
 @app.post("/api/chat", response_model=ChatResponse)

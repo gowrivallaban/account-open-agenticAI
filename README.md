@@ -1,4 +1,4 @@
-# Apex Financial — Agentic AI Chatbot for Checking Account Opening
+# GPS Financial — Agentic AI Chatbot for Checking Account Opening
 
 A full-stack banking application with an **AI-powered chatbot** (OpenAI GPT-4o with tool calling) that guides users through opening a checking account. Built with **React (Vite)** and **Python FastAPI**.
 
@@ -139,7 +139,7 @@ AI agent chat endpoint. Send user messages and receive AI-driven responses.
 ```json
 {
   "sessionId": "a1b2c3d4-...",
-  "reply": "👋 Welcome to Apex Financial! I'd be happy to help you open a checking account...",
+  "reply": "👋 Welcome to GPS Financial! I'd be happy to help you open a checking account...",
   "metadata": {}
 }
 ```

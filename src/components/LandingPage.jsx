@@ -7,7 +7,7 @@ export default function LandingPage({ onOpenChatbot }) {
             <nav className="navbar">
                 <a href="#" className="navbar-brand">
                     <span className="logo-icon">◆</span>
-                    Apex Financial
+                    GPS Financial
                 </a>
                 <ul className="navbar-links">
                     <li><a href="#products">Products</a></li>
@@ -104,7 +104,7 @@ export default function LandingPage({ onOpenChatbot }) {
 
             {/* Footer */}
             <footer className="footer">
-                <p>© 2026 Apex Financial. All rights reserved. FDIC Insured. Equal Housing Lender.</p>
+                <p>© 2026 GPS Financial. All rights reserved. FDIC Insured. Equal Housing Lender.</p>
             </footer>
         </>
     );

@@ -1,5 +1,5 @@
 """
-Apex Financial — AI Agent Module
+GPS Financial — AI Agent Module
 Powers the checking account chatbot using OpenAI GPT-4o with tool/function calling.
 """
 from __future__ import annotations
@@ -26,7 +26,7 @@ MODEL = "gpt-4o"
 # System Prompt
 # ---------------------------------------------------------------------------
 
-SYSTEM_PROMPT = """You are Apex, the AI banking assistant for Apex Financial. Your job is to help customers open a new checking account.
+SYSTEM_PROMPT = """You are GPS Assistant, the AI banking assistant for GPS Financial. Your job is to help customers open a new checking account.
 
 ## Your Personality
 - Professional yet friendly and warm
@@ -231,10 +231,10 @@ def validate_field(field_name: str, value: str) -> dict:
 # ---------------------------------------------------------------------------
 
 TERMS_AND_CONDITIONS = """
-APEX FINANCIAL — CHECKING ACCOUNT TERMS & CONDITIONS
+GPS FINANCIAL — CHECKING ACCOUNT TERMS & CONDITIONS
 Effective Date: January 1, 2026
 
-1. ACCOUNT AGREEMENT — By opening a checking account with Apex Financial, you agree to these terms.
+1. ACCOUNT AGREEMENT — By opening a checking account with GPS Financial, you agree to these terms.
 2. ELIGIBILITY — Must be 18+ and a legal U.S. resident.
 3. ACCOUNT OWNERSHIP — Account held in name(s) provided during application.
 4. DEPOSITS & WITHDRAWALS — Via direct deposit, mobile check deposit, wire transfer, debit card, ATM, or check.

@@ -29,7 +29,7 @@ const ChatbotWidget = forwardRef(function ChatbotWidget(props, ref) {
                         <div className="chatbot-header-info">
                             <div className="chatbot-avatar">🤖</div>
                             <div className="chatbot-header-text">
-                                <h4>Apex AI Assistant</h4>
+                                <h4>GPS AI Assistant</h4>
                                 <span>Online — Ready to help</span>
                             </div>
                         </div>

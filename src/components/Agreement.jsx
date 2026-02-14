@@ -6,7 +6,7 @@ APEX FINANCIAL — CHECKING ACCOUNT TERMS & CONDITIONS
 Effective Date: January 1, 2026
 
 1. ACCOUNT AGREEMENT
-By opening a checking account with Apex Financial ("Bank"), you ("Account Holder") agree to the following terms and conditions. This Agreement governs your use of the checking account and related services.
+By opening a checking account with GPS Financial ("Bank"), you ("Account Holder") agree to the following terms and conditions. This Agreement governs your use of the checking account and related services.
 
 2. ELIGIBILITY
 You must be at least 18 years of age and a legal U.S. resident to open an account. The Bank reserves the right to verify your identity and may decline to open an account at its sole discretion.
@@ -15,7 +15,7 @@ You must be at least 18 years of age and a legal U.S. resident to open an accoun
 The account will be held in the name(s) provided during the application process. You are responsible for ensuring all information provided is accurate and current.
 
 4. DEPOSITS AND WITHDRAWALS
-Deposits may be made via direct deposit, mobile check deposit, wire transfer, or at any Apex Financial branch. Withdrawals can be made via debit card, ATM, online transfer, or check. Daily withdrawal limits may apply.
+Deposits may be made via direct deposit, mobile check deposit, wire transfer, or at any GPS Financial branch. Withdrawals can be made via debit card, ATM, online transfer, or check. Daily withdrawal limits may apply.
 
 5. FEES AND CHARGES
 - Monthly Maintenance Fee: $0.00
@@ -31,7 +31,7 @@ By opening this account, you consent to receive account statements, notices, and
 Your personal information, including your Social Security Number, will be securely stored and used solely for account verification, regulatory compliance, and fraud prevention. We will not sell your personal information to third parties.
 
 8. FDIC INSURANCE
-Deposits at Apex Financial are insured by the Federal Deposit Insurance Corporation (FDIC) up to $250,000 per depositor, per ownership category.
+Deposits at GPS Financial are insured by the Federal Deposit Insurance Corporation (FDIC) up to $250,000 per depositor, per ownership category.
 
 9. ACCOUNT CLOSURE
 You may close your account at any time by contacting customer service. The Bank reserves the right to close your account with 30 days' written notice.
