@@ -69,8 +69,8 @@ account-open-agenticAI/
 ├── server/
 │   ├── main.py                 # FastAPI endpoints (/api/chat, /api/accounts)
 │   ├── agent.py                # AI agent (GPT-4o + tool calling)
-│   ├── requirements.txt        # Python dependencies
-│   └── .env                    # OpenAI API key (not committed)
+│   ├── requirements.txt        # Python dependencies (fastapi, openai, etc.)
+│   └── .env                    # OpenAI API key (not committed to git)
 └── src/
     ├── main.jsx                # React entry point
     ├── App.jsx                 # Root component
@@ -79,9 +79,9 @@ account-open-agenticAI/
     │   ├── LandingPage.jsx     # Banking products landing page
     │   ├── ChatbotWidget.jsx   # Floating chatbot panel with FAB button
     │   ├── ChatFlow.jsx        # Chat relay to backend AI agent
-    │   └── Agreement.jsx       # Terms & Conditions (legacy, kept for reference)
+    │   └── Agreement.jsx       # Terms & Conditions component
     └── utils/
-        └── validators.js       # Frontend validators (legacy, kept for reference)
+        └── validators.js       # Validation utility functions
 ```
 
 ---
@@ -105,9 +105,52 @@ Once the user agrees, the agent calls the `create_account` tool and displays:
 
 ---
 
+## AI Agent Architecture
+
+```
+User Message → POST /api/chat → GPT-4o (with tools) → Tool Calls → Final Reply
+```
+
+| Tool | Description |
+|------|-------------|
+| `validate_field` | Validates a single field (name, email, phone, DOB, SSN, address) |
+| `show_agreement` | Returns the Terms & Conditions text |
+| `create_account` | Creates the account, returns account & routing numbers |
+
+The agent runs an **agentic loop**: GPT-4o decides whether to call a tool or respond with text. Tool results are fed back to the model until it produces a final text reply.
+
+---
+
 ## API Reference
 
+### `POST /api/chat`
+
+AI agent chat endpoint. Send user messages and receive AI-driven responses.
+
+**Request Body:**
+```json
+{
+  "message": "Hi, I'd like to open a checking account.",
+  "sessionId": null
+}
+```
+
+**Response (200):**
+```json
+{
+  "sessionId": "a1b2c3d4-...",
+  "reply": "👋 Welcome to Apex Financial! I'd be happy to help you open a checking account...",
+  "metadata": {}
+}
+```
+
+> When the account is successfully created, `metadata` will include `accountCreated`, `accountNumber`, `routingNumber`, and `accountType`.
+
+---
+
 ### `POST /api/accounts`
+
+Direct account creation API (bypasses the chatbot).
 
 **Request Body:**
 ```json
@@ -150,6 +193,7 @@ Once the user agrees, the agent calls the `create_account` tool and displays:
 | Frontend | React 18, Vite 6 |
 | Styling | Vanilla CSS (glass-morphism, dark theme) |
 | Backend | Python FastAPI, Pydantic |
+| AI Agent | OpenAI GPT-4o with function/tool calling |
 | Font | Inter (Google Fonts) |
 
 ---
